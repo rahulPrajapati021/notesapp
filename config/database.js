@@ -1,13 +1,8 @@
 const {Sequelize} = require("sequelize");
 
-const sequelize = new Sequelize("notes", "sa", "12345678", {
+const sequelize = new Sequelize(process.env.DATABASE_NAME, process.env.DATABASE_USER, process.env.DATABASE_PASSWORD, {
     host: "localhost",
-    dialect: 'mssql',
-    dialectOptions: {
-        options: {
-            encrypt: false
-        }
-    }
+    dialect: 'mysql'
 })
 
 const connectDatabase = async () => {
