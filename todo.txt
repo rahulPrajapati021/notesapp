@@ -1,0 +1,16 @@
+admin panel to create broadcast notes. 
+
+multi company based login system
+rahul@zkteco
+rahul is user and
+zkteco is company
+
+on the basis of company one should be able to search employee by just typing @ in notes. 
+
+sharing notes. 
+Two person having access to same note. 
+
+
+these update means, 
+we need to update user model and add a col for company. 
+and in notes we need to add a col name as authorized users. 
